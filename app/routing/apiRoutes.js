@@ -11,10 +11,11 @@ module.exports = function(app) {
   });
 
   // API POST request to handle submission of new friend data
-  app.post("/api/friends", function(req, res) {
+  app.post("/api/new", function(req, res) {
 
     // add new data to friends list
     friendsList.push(req.body);
+    console.log(friendsList);
   });
 
 };
