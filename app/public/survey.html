@@ -191,20 +191,33 @@
     // Capture the form inputs 
     $("#submit").on("click", function(){
 
-			// create an object with the users data
-	    	var newFriend =	{name: $("#name").val(),
-			    			photo: $("#photo").val(),
-			    			scores:[	$("#q1").val(),
-			    						$("#q2").val(),
-			    						$("#q3").val(),
-			    						$("#q4").val(),
-			    						$("#q5").val(),
-			    						$("#q6").val(),
-			    						$("#q7").val(),
-			    						$("#q8").val(),
-			    						$("#q9").val(),
-			    						$("#q10").val()]}
-			;
+		// create an object with the users data
+    	var newFriend =	{name: $("#name").val(),
+		    			photo: $("#photo").val(),
+		    			scores:[	$("#q1").val(),
+		    						$("#q2").val(),
+		    						$("#q3").val(),
+		    						$("#q4").val(),
+		    						$("#q5").val(),
+		    						$("#q6").val(),
+		    						$("#q7").val(),
+		    						$("#q8").val(),
+		    						$("#q9").val(),
+		    						$("#q10").val()]}
+		;
+
+		//validation of input data
+		isValid = true;
+
+		if (newFriend.name === "") {isValid = false};
+		if (newFriend.photo === "") {isValid = false};
+
+		for (var i = 0; i < 10; i++) {
+			if (newFriend.scores[i] === "") {isValid = false};
+		};
+
+		// if input data is valid then POST the data
+		if (isValid) {	
 
 	    	// get the URL of the website
 	    	var currentURL = window.location.origin;
@@ -219,7 +232,11 @@
 		    	// Show the modal
 		    	$("#matchModal").modal('toggle');
 
-	    	});	
+	    	});
+	    }
+	    else {
+	    	alert("Please fill out all of the boxes in the survey.");
+	    };
 
     }); // end of submit function
 
