@@ -16,6 +16,7 @@ module.exports = function(app) {
     // add new data to friends list
     friendsList.push(req.body);
     console.log(friendsList);
+    res.json(friendsList[0]);
   });
 
 };
