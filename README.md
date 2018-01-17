@@ -1,5 +1,6 @@
 # friendfinder
-Coding Boot Camp Week 13 Homework. Node and Express Servers. 
+
+Demonstration of routing using Node and Express servers. 
 
 This app asks the user to carry out a survey and then matches them to a friend.
 
