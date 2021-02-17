@@ -6,12 +6,12 @@ var friendsList = [
 },
 {
 "name": "Ororo Munroe",
-"photo": "https://en.wikipedia.org/wiki/File:Storm_(Ororo_Munroe).png",
+"photo": "https://upload.wikimedia.org/wikipedia/en/3/34/Storm_%28Ororo_Munroe%29.png",
 "scores" : ['5','2','5','4','4','1','5','4','4','2']
 },
 {
 "name": "Anna Marie",
-"photo": "https://en.wikipedia.org/wiki/File:Rogue_(Marvel_Comics_character_-_circa_2018).png",
+"photo": "https://upload.wikimedia.org/wikipedia/en/1/17/Rogue_%28Marvel_Comics_character_-_circa_2018%29.png",
 "scores" : ['4','5','1','1','3','5','4','3','3','5']
 },
 {
@@ -26,7 +26,7 @@ var friendsList = [
 },
 {
 "name": "Kurt Wagner",
-"photo": "https://upload.wikimedia.org/wikipedia/en/8/88/Nightcrawler.PNGhttps://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Nightcrawler_%28Kurt_Wagner_circa_2018%29.png/250px-Nightcrawler_%28Kurt_Wagner_circa_2018%29.png",
+"photo": "https://upload.wikimedia.org/wikipedia/en/7/7b/Nightcrawler_%28Kurt_Wagner_circa_2018%29.png",
 "scores" : ['3','4','1','2','3','2','5','5','5','3']
 },
 {
